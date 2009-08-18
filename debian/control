@@ -1,12 +1,13 @@
 Source: audiofile
-Section: libs
+Section: core
 Priority: optional
-Maintainer: Daniel Kobras <kobras@debian.org>
+Maintainer: Alexander V. Nikolaev <avn@daemon.hole.ru>
 Build-Depends: debhelper (>= 5), autotools-dev, dpatch
+XCS-Cross-Host-Build-Depends: debhelper (>= 5), gettext, cdbs, cdbs-embedded, autotools-dev, libtool, automake
 Standards-Version: 3.7.2
 
 Package: libaudiofile-dev
-Section: libdevel
+Section: core
 Architecture: any
 Depends: libaudiofile0 (= ${Source-Version}), libc6-dev
 Conflicts: libaudiofile0 (<= 0.2.3-4)
@@ -21,7 +22,7 @@ Description: Open-source version of SGI's audiofile library (header files)
  identifying and converting audio files.
 
 Package: libaudiofile0
-Section: libs
+Section: core
 Architecture: any
 Depends: ${shlibs:Depends}
 Description: Open-source version of SGI's audiofile library
@@ -33,7 +34,7 @@ Description: Open-source version of SGI's audiofile library
  libaudiofile.
 
 Package: libaudiofile0-dbg
-Section: libdevel
+Section: core
 Architecture: any
 Depends: libaudiofile0 (= ${Source-Version})
 Description: Open-source version of SGI's audiofile library
