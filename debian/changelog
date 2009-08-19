@@ -1,3 +1,9 @@
+audiofile (0.2.6-7.ip1) unstable; urgency=low
+
+  * Ported to IPLinux
+
+ -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Wed, 19 Aug 2009 04:26:34 +0300
+
 audiofile (0.2.6-7) unstable; urgency=low
 
   * Added patches:
